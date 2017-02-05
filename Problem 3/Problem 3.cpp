@@ -5,7 +5,7 @@ typedef unsigned long long ull;
 
 auto solve(ull) -> ull;
 
-auto main() -> int {
+auto main(int argc, char *argv[]) -> int {
     int t;
     ull n;
     
