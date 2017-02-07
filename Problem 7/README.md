@@ -32,6 +32,6 @@ Print the required answer for each test case.
 
 The first 10 prime numbers are
     
-    {2, 3, **5**, 7, 11, **13**, 17, 19, 23, 29}
+    {2, 3, 5, 7, 11, 13, 17, 19, 23, 29}
 
 we can see that the 3<sup>rd</sup> prime number is 5 and 6<sup>th</sup> prime number is 13.
