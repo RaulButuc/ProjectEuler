@@ -17,18 +17,18 @@ First line contains _T_ that denotes the number of test cases. This is followed 
 
 For each test case, print an integer that denotes the sum of all the multiplies of 3 and 5 below _N_.
 
-## Sample Input 0
+## Sample Input
 
     2
     10
     100
 
-## Sample Output 0
+## Sample Output
 
     23
     2318
 
-## Explanation 0
+## Explanation
 
 For _N_ = 10, if we list all the natural numbers below 10 taht are multiplies of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiplies is 23.
 
