@@ -22,8 +22,7 @@ auto main(int argc, char *argv[]) -> int {
   return 0;
 }
 
-auto sieveOfEratosthenes(std::vector<int> &primes, std::vector<bool> &isPrime)
-    -> void {
+auto sieveOfEratosthenes(std::vector<int> &primes, std::vector<bool> &isPrime) -> void {
   isPrime.push_back(false);
   for (auto i = 1; i <= max; ++i) isPrime.push_back(true);
 
