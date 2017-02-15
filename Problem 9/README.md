@@ -2,7 +2,7 @@
 
 A Pythagorean triplet is a set of three natural numbers, _a_ < _b_ < _c_, for which,
 
-    _a_<sup>2</sup> + _b_<sup>2</sup> = _c_<sup>2</sup>
+    _a_ <sup>2</sup> + _b_ <sup>2</sup> = _c_ <sup>2</sup>
 
 For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>
 
