@@ -1,60 +1,48 @@
-#include <vector>
 #include <iostream>
+#include <vector>
+#include <cmath>
 
-typedef long long ll;
+typedef const int ci;
+typedef unsigned int ui;
+typedef std::vector<int> vi;
 
-auto gcd(int, int) -> int;
-auto solve(int) -> ll;
+auto prep() -> vi;
 
 auto main(int argc, char *argv[]) -> int {
-  int T, N;
+  ui t, n;
 
-  std::cin >> T;
-  while (T--) {
-    std::cin >> N;
-    std::cout << solve(N) << "\n";
+  vi saved = prep();
+
+  std::cin >> t;
+  while (t--) {
+    std::cin >> n;
+    std::cout << saved[n] << "\n";
   }
 
   return 0;
 }
 
-auto gcd(int x, int y) -> int { return y ? gcd(y, x % y) : x; }
-
-auto solve(int s) -> ll {
-  int a = 0, b = 0, c = 0;
-  int k = 0, d = 0, m = 0, n = 0;
-  ll r = -1;
-  bool found = false;
-
-  if (s % 2) {
-    return r;
-  }
-
-  for (m = 2; m * m <= s / 2; ++m) {
-    if ((s / 2) % m == 0) {
-      if (m % 2 == 0) {
-        k = m + 1;
-      } else {
-        k = m + 2;
+auto prep() -> vi {
+  ci max = 3000, empty = -1;
+  vi saved(max + 1, empty);
+  
+  for (int a = 1; a < max; a++) {
+    for (int b = a + 1; b < max - a; b++) {
+      int cc = std::pow(a, 2) + std::pow(b, 2);
+      int c = std::sqrt(cc);
+      if (std::pow(c, 2) != cc) {
+        continue;
       }
-      while (k < 2 * m && k <= s / (2 * m)) {
-        if (s / (2 * m) % k == 0 && gcd(k, m) == 1) {
-          d = s / 2 / (k * m);
-          n = k - m;
-          a = d * (m * m - n * n);
-          b = 2 * d * m * n;
-          c = d * (m * m + n * n);
-          r = a * b * c;
-          found = true;
-          break;
-        }
-        k += 2;
+
+      int sum = a + b + c;
+      if (sum > max) {
+        break;
       }
-    }
-    if (found) {
-      break;
+
+      int prod = a * b * c;
+      saved[sum] = (saved[sum] < prod) ? prod : saved[sum];
     }
   }
 
-  return r;
+  return saved;
 }
