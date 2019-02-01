@@ -1,6 +1,6 @@
 # Problem 11: Largest product in a grid
 
-In the _20_ x _20_ grid below, four numbers along a diagonal line have been marked in bold.
+In the __20__ x __20__ grid below, four numbers along a diagonal line have been marked in bold.
 
 89 90 95 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08  
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00  
@@ -8,10 +8,10 @@ In the _20_ x _20_ grid below, four numbers along a diagonal line have been mark
 52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91  
 22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80  
 24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50  
-32 98 81 28 64 23 67 10 _26_ 38 40 67 59 54 70 66 18 38 64 70  
-67 26 20 68 02 62 12 20 95 _63_ 94 39 63 08 40 91 66 49 94 21  
-24 55 58 05 66 73 99 26 97 17 _78_ 78 96 83 14 88 34 89 63 72  
-21 36 23 09 75 00 76 44 20 45 35 _14_ 00 61 33 97 34 31 33 95  
+32 98 81 28 64 23 67 10 __26__ 38 40 67 59 54 70 66 18 38 64 70  
+67 26 20 68 02 62 12 20 95 __63__ 94 39 63 08 40 91 66 49 94 21  
+24 55 58 05 66 73 99 26 97 17 __78__ 78 96 83 14 88 34 89 63 72  
+21 36 23 09 75 00 76 44 20 45 35 __14__ 00 61 33 97 34 31 33 95  
 78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92  
 16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57  
 86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58  
@@ -23,11 +23,11 @@ In the _20_ x _20_ grid below, four numbers along a diagonal line have been mark
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54  
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 
-The product of these numbers is _26_ x _63_ x _78_ x _14_ = _1788696_.
+The product of these numbers is __26__ x __63__ x __78__ x __14__ = __1788696__.
 
 ## Input Format
 
-Input consists of _20_ lines, each containing _20_ integers.
+Input consists of __20__ lines, each containing __20__ integers.
 
 
 ## Constraints
